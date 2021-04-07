@@ -1,0 +1,18 @@
+{
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "prettier.disableLanguages": ["js"],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 2,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "workbench.iconTheme": "vscode-icons"
+}
