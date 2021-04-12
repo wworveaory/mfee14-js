@@ -27,19 +27,38 @@ date.innerHTML = createOptions(1, 31)
 year.addEventListener('change', function () {
   selectedYear = +year.value
   console.log(selectedYear, selectedMonth, selectedDate)
+
+  // 年 月同時存在才要改變日期
+  if (selectedMonth && selectedYear) {
+    // 得到當月有幾天
+    const maxDays = new Date(selectedYear, selectedMonth, 0).getDate()
+
+    // 重新更動日期最大選項
+    date.innerHTML = createOptions(1, maxDays)
+
+    // 日期為可讓使用者選擇
+    date.disabled = false
+  } else {
+    date.disabled = true
+  }
 })
 
 month.addEventListener('change', function () {
   selectedMonth = +month.value
   console.log(selectedYear, selectedMonth, selectedDate)
 
+  // 年 月同時存在才要改變日期
   if (selectedMonth && selectedYear) {
     // 得到當月有幾天
     const maxDays = new Date(selectedYear, selectedMonth, 0).getDate()
 
+    // 重新更動日期最大選項
     date.innerHTML = createOptions(1, maxDays)
 
+    // 日期為可讓使用者選擇
     date.disabled = false
+  } else {
+    date.disabled = true
   }
 })
 
