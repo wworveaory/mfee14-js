@@ -14,7 +14,6 @@ start.addEventListener('click', function () {
   const diceTags = ['one', 'two', 'three', 'four', 'five', 'six']
   // 3. 呈現圖示 & 點數
   // ex. <i class="fas fa-dice-one"></i>
-  //dice.innerHTML = '<i class="fas fa-dice-' + diceType + '"></i>'
 
   // 樣版字串的寫法
   // https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Template_literals
