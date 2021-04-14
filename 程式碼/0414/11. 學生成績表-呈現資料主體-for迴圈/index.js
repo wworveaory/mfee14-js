@@ -33,13 +33,23 @@ for (let i = 1; i < rawDataArray.length; i++) {
   // ex. `"陳小花",90,65,77`
   const rows = rawDataArray[i].replaceAll('"', '').split(',')
 
+  // rows = ['陳小花', 90, 65, 77]
+
   bodyDisplay += `<tr>`
 
+  // bodyDiplsy = '<tr>'
+
   for (let j = 0; j < rows.length; j++) {
+
     bodyDisplay += `<td>${rows[j]}</td>`
+    // bodyDiplsy = '<tr><td>陳小花</td>'
+    // bodyDiplsy = '<tr><td>陳小花</td><td>90</td>'
+    // bodyDiplsy = '<tr><td>陳小花</td><td>90</td><td>65</td>'
+    // bodyDiplsy = '<tr><td>陳小花</td><td>90</td><td>90</td><td>77</td>'
   }
 
   bodyDisplay += `</tr>`
+  // bodyDiplsy = '<tr><td>陳小花</td><td>90</td><td>90</td><td>77</td></tr>'
 }
 
 dataTable.innerHTML += `<tbody>${bodyDisplay}</tbody>`
