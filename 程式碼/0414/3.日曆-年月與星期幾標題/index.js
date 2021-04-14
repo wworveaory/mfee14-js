@@ -21,7 +21,7 @@ const weekDayList = ['日', '一', '二', '三', '四', '五', '六']
 //for迴圈的寫法
 //宣告
 let weekDayDisplay = ''   
-
+ㄥ
 for (let i = 0; i < weekDayList.length; i++) {
   weekDayDisplay += `<th>${weekDayList[i]}</th>`
 }
