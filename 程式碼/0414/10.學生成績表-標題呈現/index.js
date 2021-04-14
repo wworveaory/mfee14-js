@@ -21,5 +21,5 @@ for (let i = 0; i < headingArray.length; i++) {
   headingDisplay += `<th>${headingArray[i]}</th>`
 }
 
-// 呈現標題
-dataTable.innerHTML = `<thead><tr>${headingDisplay}</tr></thead>`
+// // 呈現標題
+// dataTable.innerHTML = `<thead><tr>${headingDisplay}</tr></thead>`
