@@ -15,7 +15,7 @@ const rawDataArray = rawData.split('\n')
 // headings = ["學生姓名", "國文", "數學", "英文"]
 const headings = rawDataArray[0].replaceAll('"', '').split(',')
 
-使用for迴圈的語法
+//使用for迴圈的語法
 
 let headingDisplay = ''
 
@@ -25,19 +25,6 @@ for (let i = 0; i < headings.length; i++) {
 
 dataTable.innerHTML = `<thead><tr>${headingDisplay}</tr></thead>`
 
----------
-
-// 使用map與連鎖結合語法
-
-// const newHeadings = headings.map(function (v) {
-//   return `<th>${v}</th>`
-// })
-
-dataTable.innerHTML = `<thead><tr>${headings
-  .map(function (v) {
-    return `<th>${v}</th>`
-  })
-  .join('')}</tr></thead>`
 
 // 呈現資料
 let bodyDisplay = ''
