@@ -9,7 +9,7 @@ JSON 是物件、陣列、數字、字串、布林值、還有 null 的語法。
 JSON主要以"鍵/值(key/value)"的格式來描述數值，一組數值稱為一個鍵值對(key/value pair)
 
 - 鍵(Key): 使用雙引號包含的字串
-- 值(Value): 可以是字串(string)、數字(number)、布林(boolean)、陣列(array)或物件(object)
+- 值(Value): 可以是字串(string)、數字(number)、布林(boolean)、陣列(array)或物件(object)、null
 - 鍵值對(Key/Value Pair): 鍵與值間使用冒號(:)分隔，鍵值對之間使用逗號(,)分隔
 
 如下面的範例:
