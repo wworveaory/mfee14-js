@@ -12,6 +12,7 @@ const dataTable = document.getElementById('dataTable')
 const rawDataArray = rawData.split('\n')
 
 // 取代(")為空白字元，然後分割成新的陣列
+// headingArray = ["學生姓名","國文","數學","英文"]
 const headingArray = rawDataArray[0].replaceAll('"', '').split(',')
 
 let headingDisplay = ''
