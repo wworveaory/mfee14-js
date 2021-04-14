@@ -25,8 +25,8 @@ for (let i = 0; i < weekDayList.length; i++) {
   weekDayDisplay += `<th>${weekDayList[i]}</th>`
 }
 
-title.innerHTML = `<tr>${weekDayDisplay}</tr>`
+// title.innerHTML = `<tr>${weekDayDisplay}</tr>`
 
-// map的寫法
-const weekDayDisplayMap = weekDayList.map((v) => `<th>${v}</th>`).join('')
-title.innerHTML = `<tr>${weekDayDisplayMap}</tr>`
+// // map的寫法
+// const weekDayDisplayMap = weekDayList.map((v) => `<th>${v}</th>`).join('')
+// title.innerHTML = `<tr>${weekDayDisplayMap}</tr>`
