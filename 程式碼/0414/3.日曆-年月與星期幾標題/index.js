@@ -18,13 +18,14 @@ yearAndMonth.innerHTML = nowY + '/' + nowM
 // 呈現標題
 const weekDayList = ['日', '一', '二', '三', '四', '五', '六']
 
-// for迴圈的寫法
-let weekDayDisplay = ''
-
+//for迴圈的寫法
+//宣告
+let weekDayDisplay = ''   
+//增加
 for (let i = 0; i < weekDayList.length; i++) {
   weekDayDisplay += `<th>${weekDayList[i]}</th>`
 }
-
+ㄥ
 title.innerHTML = `<tr>${weekDayDisplay}</tr>`
 
 // map的寫法
