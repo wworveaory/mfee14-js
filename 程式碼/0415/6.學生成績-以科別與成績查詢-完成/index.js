@@ -28,6 +28,7 @@ const score = document.getElementById('score')
 // button
 const searchByScore = document.getElementById('searchByScore')
 const resetAll = document.getElementById('resetAll')
+
 // 用分行符號取得多行陣列值
 const rawDataArray = rawData.split('\n')
 
@@ -133,11 +134,11 @@ searchByScore.addEventListener('click', function () {
     return alert('請填分數')
   }
 
-  if (type.value === '0') {
+  if (!type.value) {
     return alert('請選科別')
   }
 
-  if (comparsion.value === '0') {
+  if (!comparsion.value) {
     return alert('請選科別')
   }
 
@@ -148,6 +149,11 @@ searchByScore.addEventListener('click', function () {
     } else {
       return value[type.value] <= +score.value
     }
+
+    // 寫成三元表達式的寫法
+    // return comparsion.value === 'greater'
+    //   ? value[type.value] >= +score.value
+    //   : value[type.value] <= +score.value
   })
 
   // 刷新整個表格
@@ -157,8 +163,8 @@ searchByScore.addEventListener('click', function () {
 resetAll.addEventListener('click', function () {
   // 恢復三選項的預設值
   score.value = ''
-  type.value = '0'
-  comparsion.value = '0'
+  type.value = ''
+  comparsion.value = ''
   // 刷新整個表格
   displayStudentData(students)
 })
