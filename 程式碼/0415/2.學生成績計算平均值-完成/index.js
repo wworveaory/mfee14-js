@@ -4,6 +4,14 @@ const rawData = `"學生姓名","國文","數學","英文"
 "張大頭",80,75,60
 "李一百",100,60,85`
 
+// 學生資料物件的長相
+// {
+//   name:"陳小花",
+//   chinese: 100,
+//   math: 60,
+//   english:85
+// }
+
 // 獲取dom元素介面物件
 // table
 const dataTable = document.getElementById('dataTable')
@@ -11,7 +19,7 @@ const dataTable = document.getElementById('dataTable')
 // 用分行符號取得多行陣列值
 const rawDataArray = rawData.split('\n')
 
-// 呈現標題
+// 呈現標題資料
 // headings = ["學生姓名", "國文", "數學", "英文"]
 const headings = rawDataArray[0].replaceAll('"', '').split(',')
 
