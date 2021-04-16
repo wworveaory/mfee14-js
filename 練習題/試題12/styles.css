@@ -1,0 +1,95 @@
+body {
+        background-color: #d3e2fc;
+
+        margin: 32px;
+
+        font-family: 'Roboto', sans-serif;
+        color: #ecf0f1;
+      }
+
+      a {
+        color: #ecf0f1;
+      }
+
+      button {
+        display: block;
+
+        width: 100%;
+        max-width: 200px;
+
+        padding: 16px;
+        margin: 0 auto 16px auto;
+
+        box-sizing: border-box;
+
+        border-style: none;
+        border-radius: 6px;
+
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        text-align: center;
+        text-decoration: none;
+
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      /* // [START btnstates] */
+      .btn {
+        background-color: #4285f4;
+      }
+
+      .btn:hover {
+        background-color: #296cdb;
+      }
+
+      .btn:focus {
+        background-color: #0f52c1;
+
+        /* The outline parameter suppresses the border
+        color / outline when focused */
+        outline: 0;
+      }
+
+      .btn:active {
+        background-color: #0039a8;
+      }
+      /* // [END btnstates] */
+
+      /* // [START webkit-specific] */
+      /* Webkit / Chrome Specific CSS to remove tap
+      highlight color */
+      .btn {
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* // [END webkit-specific] */
+
+      /* // [START ff-specific] */
+      /* Firefox Specific CSS to remove button
+      differences and focus ring */
+      .btn {
+        background-image: none;
+      }
+
+      .btn::-moz-focus-inner {
+        border: 0;
+      }
+      /* // [END ff-specific] */
+
+      h1,
+      h2 {
+        color: black;
+        margin: 0 auto 16px auto;
+        display: block;
+
+        width: 100%;
+        max-width: 200px;
+      }
+      table {
+        color: black;
+        margin: 0 auto 16px auto;
+        width: 100%;
+        max-width: 400px;
+      }
