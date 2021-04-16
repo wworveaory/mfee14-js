@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>山茶花茶飲店點訂系統</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>茶飲點購系統</h1>
+    <h2 id="tea-text">茶種：</h2>
+    <button class="btn" id="tea-red">紅茶</button>
+    <button class="btn" id="tea-green">綠茶</button>
+    <h2 id="sugar-text">甜度：</h2>
+    <button class="btn" id="sugar-normal">正常糖</button>
+    <button class="btn" id="sugar-half">半糖</button>
+    <h2 id="ice-text">冰度：</h2>
+    <button class="btn" id="ice-normal">正常冰</button>
+    <button class="btn" id="ice-half">半冰</button>
+    <h2 id="count-text">數量：1</h2>
+    <button class="btn" id="add-one">+1</button>
+    <button class="btn" id="sub-one">-1</button>
+    <hr />
+    <button class="btn" id="add-order">加入訂單</button>
+    <button class="btn" id="reset-order">重新點單</button>
+    <hr />
+    <h2>訂購表格</h2>
+    <table border="1">
+      <thead>
+        <th>編號</th>
+        <th>茶種</th>
+        <th>甜度</th>
+        <th>冰度</th>
+        <th>數量</th>
+        <th>小計</th>
+      </thead>
+      <tbody id="order-list"></tbody>
+    </table>
+    <h2 id="order-total">總計：0</h2>
+
+    <script src="index.js"></script>
+  </body>
+</html>
